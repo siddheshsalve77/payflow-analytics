@@ -1,0 +1,33 @@
+@"
+# secrets - never commit these
+.env
+*.pem
+*.key
+
+# python
+venv310/
+__pycache__/
+*.pyc
+*.pyo
+
+# data files
+data/raw/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# AWS
+.aws/credentials
+"@ | Out-File -FilePath .gitignore -Encoding utf8
+lambda_build/
+payflow_processor.zip
